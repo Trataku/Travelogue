@@ -13,7 +13,7 @@
         <!--Trips-->
         <scene sceneID="E0i-Vr-1gb">
             <objects>
-                <tableViewController id="0my-4e-5NF" sceneMemberID="viewController">
+                <tableViewController id="0my-4e-5NF" customClass="TripTableViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rKn-qC-iR7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="-1502" y="198"/>
         </scene>
-        <!--Travelogue-->
+        <!--Entries-->
         <scene sceneID="eo1-dL-gmJ">
             <objects>
-                <tableViewController id="Eae-Jz-gvT" sceneMemberID="viewController">
+                <tableViewController id="Eae-Jz-gvT" customClass="EntriesTableViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ID4-Qw-0Wg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +115,7 @@
                             <outlet property="delegate" destination="Eae-Jz-gvT" id="N4r-Fk-bAS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Travelogue" id="GGJ-b8-UM3">
+                    <navigationItem key="navigationItem" title="Entries" id="GGJ-b8-UM3">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="eWJ-C2-DaU">
                             <connections>
                                 <segue destination="D1w-JW-uR7" kind="show" id="uHg-ji-k1e"/>
@@ -130,7 +130,7 @@
         <!--New Trip-->
         <scene sceneID="0dE-ed-Nk9">
             <objects>
-                <viewController id="fSL-fB-JYE" sceneMemberID="viewController">
+                <viewController id="fSL-fB-JYE" customClass="NewTripViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jo1-VQ-uIr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="254" y="963"/>
         </scene>
-        <!--Current Travelogue-->
+        <!--Current Entry-->
         <scene sceneID="65V-BR-USQ">
             <objects>
-                <viewController id="D1w-JW-uR7" sceneMemberID="viewController">
+                <viewController id="D1w-JW-uR7" customClass="EntryViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QRC-oF-RIO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,7 +238,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zAB-q0-1Sm"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Current Travelogue" id="Ez6-NS-hr4">
+                    <navigationItem key="navigationItem" title="Current Entry" id="Ez6-NS-hr4">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="moe-Bp-mVG"/>
                     </navigationItem>
                 </viewController>
