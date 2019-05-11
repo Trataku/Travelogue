@@ -9,6 +9,9 @@
 import UIKit
 
 class EntryViewController: UIViewController {
+    
+    var entry: Entry?
+    var trip: Trip?
 
     override func viewDidLoad() {
         super.viewDidLoad()

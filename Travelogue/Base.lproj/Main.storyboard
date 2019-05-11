@@ -109,7 +109,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="D1w-JW-uR7" kind="show" id="eHB-ap-7kP"/>
+                                    <segue destination="D1w-JW-uR7" kind="show" identifier="existingEntry" id="eHB-ap-7kP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -121,10 +121,13 @@
                     <navigationItem key="navigationItem" title="Entries" id="GGJ-b8-UM3">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="eWJ-C2-DaU">
                             <connections>
-                                <segue destination="D1w-JW-uR7" kind="show" id="uHg-ji-k1e"/>
+                                <segue destination="D1w-JW-uR7" kind="show" identifier="newEntry" id="uHg-ji-k1e"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="EntryTableView" destination="ID4-Qw-0Wg" id="G4a-e9-L5Z"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMj-7x-EoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,6 +215,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uHg-ji-k1e"/>
+        <segue reference="eHB-ap-7kP"/>
     </inferredMetricsTieBreakers>
 </document>
