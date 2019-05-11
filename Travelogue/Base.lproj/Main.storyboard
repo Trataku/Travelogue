@@ -48,10 +48,13 @@
                     <navigationItem key="navigationItem" title="Trips" id="vP1-AS-Ulj">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bjz-tn-1v7">
                             <connections>
-                                <segue destination="fSL-fB-JYE" kind="show" id="VBL-NB-gxc"/>
+                                <action selector="add:" destination="0my-4e-5NF" id="S0z-dR-nTm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="TripTableView" destination="rKn-qC-iR7" id="DPk-bp-FSy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U4x-c4-DIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,45 +129,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMj-7x-EoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="254" y="197"/>
-        </scene>
-        <!--New Trip-->
-        <scene sceneID="0dE-ed-Nk9">
-            <objects>
-                <viewController id="fSL-fB-JYE" customClass="NewTripViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jo1-VQ-uIr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGf-v0-PeM">
-                                <rect key="frame" x="15" y="95" width="38" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nVI-dH-IeI">
-                                <rect key="frame" x="73" y="90" width="287" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="8vf-Iq-vE5" firstAttribute="trailing" secondItem="nVI-dH-IeI" secondAttribute="trailing" constant="15" id="OWh-xB-zrP"/>
-                            <constraint firstItem="fGf-v0-PeM" firstAttribute="leading" secondItem="8vf-Iq-vE5" secondAttribute="leading" constant="15" id="Osg-IE-Vgx"/>
-                            <constraint firstItem="nVI-dH-IeI" firstAttribute="leading" secondItem="fGf-v0-PeM" secondAttribute="trailing" constant="20" id="T26-rx-xjS"/>
-                            <constraint firstItem="fGf-v0-PeM" firstAttribute="top" secondItem="8vf-Iq-vE5" secondAttribute="top" constant="31" id="Zob-yg-SQu"/>
-                            <constraint firstItem="nVI-dH-IeI" firstAttribute="top" secondItem="8vf-Iq-vE5" secondAttribute="top" constant="26" id="ePU-Oy-89E"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="8vf-Iq-vE5"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="New Trip" id="tCQ-Kk-H6T">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="4jm-n6-MTa"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6bI-KB-kBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="254" y="963"/>
         </scene>
         <!--Current Entry-->
         <scene sceneID="65V-BR-USQ">
