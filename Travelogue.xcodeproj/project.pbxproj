@@ -17,7 +17,6 @@
 		D8E2239B22826135004D34CC /* TripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2239A22826135004D34CC /* TripTableViewController.swift */; };
 		D8E2239D22863D47004D34CC /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2239C22863D47004D34CC /* EntriesTableViewController.swift */; };
 		D8E2239F22863D84004D34CC /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2239E22863D84004D34CC /* EntryViewController.swift */; };
-		D8E223A122863D98004D34CC /* NewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E223A022863D98004D34CC /* NewTripViewController.swift */; };
 		D8E223A6228640F1004D34CC /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E223A2228640F1004D34CC /* Trip+CoreDataClass.swift */; };
 		D8E223A7228640F1004D34CC /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E223A3228640F1004D34CC /* Trip+CoreDataProperties.swift */; };
 		D8E223A8228640F1004D34CC /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E223A4228640F1004D34CC /* Entry+CoreDataClass.swift */; };
@@ -58,7 +57,6 @@
 		D8E2239A22826135004D34CC /* TripTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewController.swift; sourceTree = "<group>"; };
 		D8E2239C22863D47004D34CC /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
 		D8E2239E22863D84004D34CC /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
-		D8E223A022863D98004D34CC /* NewTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripViewController.swift; sourceTree = "<group>"; };
 		D8E223A2228640F1004D34CC /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D8E223A3228640F1004D34CC /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D8E223A4228640F1004D34CC /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				D8E2239A22826135004D34CC /* TripTableViewController.swift */,
 				D8E2239C22863D47004D34CC /* EntriesTableViewController.swift */,
 				D8E2239E22863D84004D34CC /* EntryViewController.swift */,
-				D8E223A022863D98004D34CC /* NewTripViewController.swift */,
 				D8E2236D22825F68004D34CC /* Main.storyboard */,
 				D8E2237322825F69004D34CC /* Assets.xcassets */,
 				D8E2237522825F69004D34CC /* LaunchScreen.storyboard */,
@@ -294,7 +291,6 @@
 				D8E2239F22863D84004D34CC /* EntryViewController.swift in Sources */,
 				D8E223A9228640F1004D34CC /* Entry+CoreDataProperties.swift in Sources */,
 				D8E223A8228640F1004D34CC /* Entry+CoreDataClass.swift in Sources */,
-				D8E223A122863D98004D34CC /* NewTripViewController.swift in Sources */,
 				D8E2236A22825F68004D34CC /* AppDelegate.swift in Sources */,
 				D8E2237222825F68004D34CC /* Travelogue.xcdatamodeld in Sources */,
 				D8E2239B22826135004D34CC /* TripTableViewController.swift in Sources */,
