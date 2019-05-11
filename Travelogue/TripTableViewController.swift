@@ -22,6 +22,11 @@ class TripTableViewController: UITableViewController {
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchTrips(searchString: "")
+    }
+    
     @IBAction func add(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Add Trip", message: "Enter new trip name.", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
@@ -77,7 +82,7 @@ class TripTableViewController: UITableViewController {
         if let entrySet = trip.entries, entrySet.count > 0 {
             // confirm deletion
             let name = trip.title ?? "Trip"
-            let alert = UIAlertController(title: "Delete Trip", message: "\(name) contains documents. Do you want to delete it?", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "Delete Trip", message: "\(name) contains entries. Do you want to delete it?", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: {
                 (alertAction) -> Void in
                 // handle cancellation of deletion
@@ -245,6 +250,13 @@ class TripTableViewController: UITableViewController {
         edit.backgroundColor = UIColor.blue
         
         return [delete, edit]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? EntriesTableViewController,
+            let row = TripTableView.indexPathForSelectedRow?.row {
+            destination.trip = trips[row]
+        }
     }
 
 }

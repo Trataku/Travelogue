@@ -38,7 +38,7 @@ public class Entry: NSManagedObject {
         }
     }
     
-    convenience init?(title: String, body: String?, image: UIImage?) {
+    convenience init?(title: String, body: String?, image: UIImage?, trip: Trip) {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         // import UIKit is needed to access UIApplication
         
@@ -54,6 +54,8 @@ public class Entry: NSManagedObject {
         if let image = image {
             self.rawImage = convertImageToNSData(image: image)
         }
+        
+        self.trip = trip
     }
     
     func convertImageToNSData(image: UIImage) -> NSData? {
